@@ -5,7 +5,6 @@ import "./index.css";
 import App from "./App.jsx";
 import HindiTest from "./HindiTest.jsx";
 
-// Check whether the user wants to open the Hindi test page
 const isHindiTest =
   new URLSearchParams(window.location.search).get("test") === "hindi";
 
