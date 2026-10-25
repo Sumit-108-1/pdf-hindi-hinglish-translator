@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Mukta", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #f2f5fa;
+  --color-ink: #14213d;
+  --color-indigo: #3347d1;
+  --color-marker: #ffe66d;
+}
+
+body { @apply bg-paper text-ink font-sans; }
