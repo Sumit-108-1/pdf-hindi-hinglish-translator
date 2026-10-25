@@ -1,10 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+
 import App from "./App.jsx";
+import HindiTest from "./HindiTest.jsx";
+
+// Check whether the user wants to open the Hindi test page
+const isHindiTest =
+  new URLSearchParams(window.location.search).get("test") === "hindi";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    {isHindiTest ? <HindiTest /> : <App />}
   </StrictMode>
 );
